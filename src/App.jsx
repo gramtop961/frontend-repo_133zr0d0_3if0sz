@@ -1,13 +1,17 @@
-import Hero from './components/Hero';
-import Features from './components/Features';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import HeroCloestic from './components/HeroCloestic';
+import Collection from './components/Collection';
+import Promo from './components/Promo';
+import BrandFooter from './components/BrandFooter';
 
 function App() {
   return (
     <div className="min-h-screen bg-black text-white">
-      <Hero />
-      <Features />
-      <Footer />
+      <Navbar />
+      <HeroCloestic />
+      <Collection />
+      <Promo />
+      <BrandFooter />
     </div>
   );
 }
