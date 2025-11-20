@@ -31,7 +31,7 @@ const items = [
 function Collection() {
   return (
     <section id="shop" className="relative bg-black py-20">
-      <div className="pointer-events-none absolute inset-0 opacity-40 [background:radial-gradient(800px_500px_at_10%_10%,rgba(234,179,8,0.12),transparent),radial-gradient(600px_400px_at_90%_20%,rgba(234,179,8,0.08),transparent)]"></div>
+      <div className="pointer-events-none absolute inset-0 opacity-40 [background:radial-gradient(800px_500px_at_10%_10%,rgba(34,211,238,0.12),transparent),radial-gradient(600px_400px_at_90%_20%,rgba(244,114,182,0.08),transparent)]"></div>
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="flex items-end justify-between">
           <motion.h2
@@ -45,7 +45,7 @@ function Collection() {
           </motion.h2>
           <div className="hidden gap-2 sm:flex">
             {[Star, Flame, Sparkles, Shield].map((Icon, idx) => (
-              <div key={idx} className="rounded-full border border-yellow-500/20 bg-zinc-900/50 p-2 text-yellow-300">
+              <div key={idx} className="rounded-full border border-cyan-400/20 bg-zinc-900/50 p-2 text-cyan-300">
                 <Icon className="h-4 w-4" />
               </div>
             ))}
@@ -60,12 +60,12 @@ function Collection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05, duration: 0.5 }}
-              className="group overflow-hidden rounded-2xl border border-yellow-500/20 bg-zinc-900/40 backdrop-blur-sm"
+              className="group overflow-hidden rounded-2xl border border-cyan-400/20 bg-zinc-900/40 backdrop-blur-sm"
             >
               <div className="relative h-64 w-full overflow-hidden">
                 <img src={item.img} alt={item.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0"></div>
-                <div className="absolute left-3 top-3 rounded-full border border-yellow-500/30 bg-black/50 px-3 py-1 text-xs text-yellow-200/90 backdrop-blur">
+                <div className="absolute left-3 top-3 rounded-full border border-cyan-400/30 bg-black/50 px-3 py-1 text-xs text-cyan-200/90 backdrop-blur">
                   {item.tag}
                 </div>
               </div>
@@ -74,7 +74,7 @@ function Collection() {
                   <h3 className="text-base font-semibold text-white">{item.title}</h3>
                   <p className="text-sm text-zinc-400">Premium Essentials</p>
                 </div>
-                <div className="text-sm font-bold text-yellow-300">{item.price}</div>
+                <div className="text-sm font-bold text-cyan-300">{item.price}</div>
               </div>
             </motion.div>
           ))}
